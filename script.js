@@ -16,6 +16,8 @@ function displayTime(){
     min.style.transform = `rotate(${mRotation}deg)`;
     sec.style.transform = `rotate(${sRotation}deg)`;
     
+    let sound = new Audio('sound.mp3');
+    sound.play();
 }
 
 setInterval(displayTime,1000);
