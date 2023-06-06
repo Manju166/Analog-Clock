@@ -16,8 +16,6 @@ function displayTime(){
     min.style.transform = `rotate(${mRotation}deg)`;
     sec.style.transform = `rotate(${sRotation}deg)`;
     
-    let sound = new Audio('sound.mp3');
-    sound.play();
 }
 
 setInterval(displayTime,1000);
@@ -27,5 +25,7 @@ function show(){
     let clock = document.getElementById("clock");
     clock.innerHTML = date.getHours()+":" + date.getMinutes()+":"+date.getSeconds();
     
+    let sound = new Audio('sound.mp3');
+    sound.play();
 }
 setInterval(show,1000);
